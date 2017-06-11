@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.test</groupId>
+  <artifactId>parentSite</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>parentSite</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+  	<sitejavaVersion>1.8</sitejavaVersion>
+  	<serviceJavaVersion>1.7</serviceJavaVersion>
+  </properties>
+<distributionManagement>
+	<snapshotRepository>
+    	<id>nexus-repo</id>
+    	<url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+  	</snapshotRepository>
+  	<repository>
+    	<id>nexus-repo</id>
+    	<url>http://localhost:8081/nexus/content/repositories/releases</url>
+   </repository>
+</distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <modules>
+  	<module>childSite</module>
+  	<module>childService</module>
+  </modules>
+</project>
