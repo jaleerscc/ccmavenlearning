@@ -21,6 +21,11 @@
     	<url>http://localhost:8081/nexus/content/repositories/releases</url>
    </repository>
 </distributionManagement>
+<scm>
+	<connection>scm:git@github.com:jaleerscc/ccmavenlearning.git</connection>
+	<developerConnection>scm:git@github.com:jaleerscc/ccmavenlearning.git</developerConnection>
+	<url>scm:git@github.com:jaleerscc/ccmavenlearning.git</url>
+</scm>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
