@@ -23,7 +23,6 @@
 <scm>
 	<connection>scm:git:ssh://git@github.com:jaleerscc/ccmavenlearning.git</connection>
 	<developerConnection>scm:git:ssh://git@github.com:jaleerscc/ccmavenlearning.git</developerConnection>
-	<tag>FIRST</tag>
 	<url>http://github.com/jaleerscc/ccmavenlearning/tree/master/parentSite</url>
 </scm>
   <dependencies>
