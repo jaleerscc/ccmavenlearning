@@ -22,9 +22,10 @@
    </repository>
 </distributionManagement>
 <scm>
-	<connection>scm:git@github.com:jaleerscc/ccmavenlearning.git</connection>
-	<developerConnection>scm:git@github.com:jaleerscc/ccmavenlearning.git</developerConnection>
-	<url>scm:git@github.com:jaleerscc/ccmavenlearning.git</url>
+	<connection>scm:git:ssh://git@github.com:jaleerscc/ccmavenlearning.git</connection>
+	<developerConnection>scm:git:ssh://git@github.com:jaleerscc/ccmavenlearning.git</developerConnection>
+	<tag>HEAD</tag>
+	<url>http://github.com/jaleerscc/ccmavenlearning/tree/master/parentSite</url>
 </scm>
   <dependencies>
     <dependency>
@@ -38,4 +39,13 @@
   	<module>childSite</module>
   	<module>childService</module>
   </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
